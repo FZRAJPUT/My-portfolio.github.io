@@ -281,15 +281,16 @@
         </div>
 
 
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea name="" id="" cols="40" rows="10" placeholder="Masseage"></textarea>
-                <a class="btn-box" href="Error.html">SUBMIT</a>
-            </form>
-        </div>
+           <div class="contact-form">
+                <form action="https://formspree.io/your-email@example.com" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="_replyto" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" cols="40" rows="10" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn-box">SUBMIT</button>
+                </form>
+            </div>
+
     </section>
     <div class="last-text">
         <p>Deveoloped by Madhav Jangid</p>
