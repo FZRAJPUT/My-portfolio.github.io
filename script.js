@@ -9,5 +9,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.getElementById('burgerButton').addEventListener('click', function () {
-    document.querySelector('.navbar').classList.toggle('active');
+  document.querySelector('.navbar').classList.toggle('active');
+});
+
+// Add an event listener to each navigation link
+var navLinks = document.querySelectorAll('.navbar a');
+navLinks.forEach(function (link) {
+  link.addEventListener('click', function () {
+      document.querySelector('.navbar').classList.remove('active');
+  });
 });
