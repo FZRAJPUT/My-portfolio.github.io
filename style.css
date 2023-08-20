@@ -1052,7 +1052,14 @@ section {
     .home-content p {
         text-align: center; /* Center the text */
     }
+    .hone-content h2 {
+        font-size: 60px;
+    }
 
+    .home-content h2 span{
+        color: #0ef;
+        font-size: 60px;
+    }
     .about {
         flex-direction: column;
         align-items: center;
