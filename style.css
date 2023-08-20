@@ -991,9 +991,7 @@ section {
 }
 
 @media screen and (max-width: 6in) {
-    *{
-        overflow-x: hidden;
-    }
+  
     .header {
         padding: 20px 5%; /* Adjust padding for smaller screens */
     }
