@@ -991,7 +991,7 @@ section {
     }
 }
 
-@media screen and (max-width: 6.9in) {
+@media screen and (max-width: 6.7in) {
 
     .header {
         padding: 20px 5%; /* Adjust padding for smaller screens */
