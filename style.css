@@ -1018,6 +1018,13 @@ section {
         margin-bottom: 40px; /* Adjusted margin */
     }
 
+     .about-text {
+        flex: 1; /* Full width in a single column layout */
+        order: 1; /* Move it to the top */
+        width: 100%; /* Full width for small screens */
+        margin: 10px 0; /* Adjusted vertical margin */
+    }
+    
     .serveice-list div {
         padding: 15px; /* Reduced padding */
         font-size: 10px; /* Reduced font size */
