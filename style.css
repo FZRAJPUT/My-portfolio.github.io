@@ -167,19 +167,55 @@ body {
 }
 
 .about {
-    margin-top: 5%;
-    height: auto;
     display: flex;
-    flex-direction: column-reverse;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 4%;
+    height: auto;
     padding: 50px 0;
+}
+
+.about-img {
+    flex: 1;
+    order: 1;
+    margin-right: 20px;
+    margin-left: 80px;
+    margin-bottom: -90px;
+}
+
+.about-text {
+    flex: 2;
+    order: 2;
+    width: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+.about-img {
+    width: 30%;
+    padding-bottom: 30%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #0ef,
+        1px 1px 40px #0ef;
+    margin-right: 50px;
+}
+
+.about-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about-text {
     text-align: center;
     max-width: 100%;
     font-size: 20px;
-    padding: 0 20px;
+    padding: 1;
 }
 
 .about-text a {
@@ -955,7 +991,7 @@ section {
     }
 }
 
-@media screen and (max-width: 6.6in) {
+@media screen and (max-width: 6.9in) {
 
     .header {
         padding: 20px 5%; /* Adjust padding for smaller screens */
@@ -984,18 +1020,22 @@ section {
 
     .navbar a {
         display: block;
-        margin: 10px 0;
+        margin: 32px 166px;
+        border-radius: 40px;
         opacity: 1; /* Show the navigation items */
     }
 
     .burger-menu {
-        display: block; /* Show the burger menu */
-        background: transparent;
+        display: block;
+        color: rgb(3, 229, 249);
+        font-size: 35px;
+        background: rgba(0, 238, 255, 0);
+        box-shadow: 1px 1px 20px rgba(0, 238, 255, 0);
     }
 
     .home {
-        flex-direction: column-reverse; /* Stack the content on small screens */
-        padding: 100px 0; /* Adjust padding for smaller screens */
+        flex-direction: column-reverse;
+        padding: 100px 0;
     }
 
     .home-img {
@@ -1014,11 +1054,23 @@ section {
         text-align: center; /* Center the text */
     }
 
-    .about-img{
-        display: none;
-        justify-content: baseline;
-        align-self: start;
+    .about {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .about-img {
+        width: 50%;
+        padding-bottom: 50%;
+        margin-top: -95px;
+        margin-bottom: 70px;
+        /* box-shadow: none; */
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
     .serveice-list div {
     padding: 20px;
     font-size: 12px;
