@@ -184,10 +184,12 @@ body {
 }
 
 .about-text {
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 20px;
+    flex: 2;
+    order: 2;
+    width: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 
@@ -989,141 +991,194 @@ section {
     }
 }
 
-@media screen and (max-width: 6.7in) {
+@media screen and (max-width: 6.9in) {
 
-    /* Common responsive styles for mobile devices */
-@media only screen and (max-width: 600px) {
+    .header {
+        padding: 20px 5%; /* Adjust padding for smaller screens */
+    }
+
+    .logo {
+        opacity: 1; /* Show the logo on small screens */
+    }
+
     .navbar {
-        top: 60px; /* Adjusted positioning for smaller screens */
+        position: absolute;
+        top: 80px; /* Adjust the positioning based on your design */
+        left: -100%; /* Hide the navigation off-screen */
+        width: 100%;
+        background-color: #051129;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        transition: left 0.3s ease;
+        z-index: 100;
+    }
+
+    .navbar.active {
+        left: 0; /* Show the navigation on hamburger button click */
     }
 
     .navbar a {
-        margin: 20px; /* Reduced margin for navigation items */
+        display: block;
+        margin: 32px 166px;
+        border-radius: 40px;
+        opacity: 1; /* Show the navigation items */
+    }
+
+    .burger-menu {
+        display: block;
+        color: rgb(3, 229, 249);
+        font-size: 35px;
+        background: rgba(0, 238, 255, 0);
+        box-shadow: 1px 1px 20px rgba(0, 238, 255, 0);
     }
 
     .home {
-        padding: 50px 0; /* Reduced padding */
+        flex-direction: column-reverse;
+        padding: 100px 0;
+    }
+
+    .home-img {
+        display: none;
     }
 
     .home-content {
-        padding: 0 10px; /* Adjusted content padding */
+        text-align: center; /* Center the content */
+        max-width: 100%;
+        padding: 0 20px;
     }
 
-/*     .about-img {
-        width: 80%;
-        padding-bottom: 80%;
-        margin-top: -40px;
-        margin-bottom: 40px;
-    } */
+    .home-content h3,
+    .home-content h1,
+    .home-content p {
+        text-align: center; /* Center the text */
+    }
 
     .about {
-        display: flex;
-        flex-direction: column; /* Change to a column layout on mobile */
+        flex-direction: column;
+        align-items: center;
     }
 
     .about-img {
-        order: 1; /* Move the image to the top on mobile */
+        width: 50%;
+        padding-bottom: 50%;
+        margin-top: -95px;
+        margin-bottom: 70px;
+        /* box-shadow: none; */
     }
 
     .about-text {
-       padding: 50px 0;/* Move the text below the image on mobile */
+        text-align: center;
     }
-    
+
     .serveice-list div {
-        padding: 15px; /* Reduced padding */
-        font-size: 10px; /* Reduced font size */
+    padding: 20px;
+    font-size: 12px;
+    box-shadow: 1px 1px 20px #0ef,
+        1px 1px 40px #0ef
     }
 
     .serveice-list div i {
-        font-size: 30px; /* Reduced font size */
-        margin-bottom: 10px; /* Reduced margin */
+    font-size: 40px;
+    margin-bottom: 20px;
     }
 
     .serveice-list div h2 {
-        font-size: 18px; /* Reduced font size */
-        margin-bottom: 5px; /* Reduced margin */
+    font-size: 24px;
+    margin-bottom: 10px;
     }
 
     .serveice-list div a {
-        font-size: 8px; /* Reduced font size */
-        margin-top: 10px; /* Reduced margin */
+    font-size: 10px;
+    margin-top: 15px;
     }
 
     .read {
-        font-size: 12px; /* Adjusted font size */
-        padding: 6px 12px; /* Adjusted padding */
+    font-size: 14px;
+    padding: 8px 18px;
     }
 
     .container {
-        padding: 15px; /* Reduced padding */
+        padding: 26px;
     }
 
     .container1 {
-        width: 100%; /* Full width for small screens */
-        padding: 10px; /* Further reduced padding */
-        height: auto; /* Adjusted height */
-        margin: 0; /* No margin needed */
-    }
+        width: 90%; /* Responsive width */
+        padding: 20px; /* Further reduce padding */
+        height: 60vh;
 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .technical-bars .bar {
-        font-size: 14px; /* Adjusted font size */
+        font-size: 18px; /* Adjust font size */
     }
-
+    
     .radial-bars {
-        width: 80px; /* Adjusted width */
-        height: 80px; /* Adjusted height */
+        width: 100px;
+        height: 100px;
     }
-
+    
     .radial-bars svg {
-        width: 60px; /* Adjusted width */
-        height: 90px; /* Adjusted height */
+        width: 80px;
+        height: 110px;
     }
-
+    
     .percentage {
-        font-size: 10px; /* Adjusted font size */
+        font-size: 14px; /* Adjust font size */
     }
-
+    
     .text {
-        font-size: 8px; /* Adjusted font size */
+        font-size: 12px; /* Adjust font size */
     }
 
     section {
-        padding: 10px 0; /* Reduced padding */
+        padding: 20px 0;
     }
 
     .Contact {
-        padding: 30px 0; /* Reduced padding */
+    flex-direction: column;
+    padding: 50px 0;
+    }
+
+    .contact-text, .contact-form {
+    flex: 1;
+    padding: 0 20px;
     }
 
     .contact-text h2 {
-        font-size: 24px; /* Reduced font size */
+    font-size: 36px;
     }
 
     .contact-text h4 {
-        font-size: 14px; /* Reduced font size */
+    font-size: 16px;
     }
 
     .contact-text p {
-        font-size: 12px; /* Reduced font size */
+    font-size: 14px;
+    }
+
+    .contact-icons {
+    margin-top: 20px;
     }
 
     .contact-list li {
-        font-size: 12px; /* Reduced font size */
+    font-size: 14px;
     }
 
     .contact-icons a {
-        width: 25px; /* Adjusted width */
-        height: 25px; /* Adjusted height */
-        font-size: 14px; /* Adjusted font size */
-        margin: 0 8px 15px 0; /* Adjusted margin */
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    margin: 0 10px 20px 0;
     }
 
     .contact-form form input,
     .contact-form form textarea {
-        padding: 6px; /* Reduced padding */
-        font-size: 12px; /* Adjusted font size */
+    padding: 8px;
+    font-size: 14px;
     }
-}
 
     .last-text p {
     font-size: 14px;
