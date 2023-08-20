@@ -166,71 +166,59 @@ body {
 }
 
 .about {
+    padding: 40px 0;
+}
+
+.about-content {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 4%;
-    height: auto;
-    padding: 50px 0;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about-img {
-    flex: 1;
-    order: 1;
-    margin-right: 20px;
-    margin-left: 80px;
-    margin-bottom: -90px;
-}
-
-.about-text {
-    flex: 2;
-    order: 2;
-    width: 10%;
-    margin-left: 20px;
-    margin-right: 20px;
-
-}
-
-
-.about-img {
-    width: 30%;
-    padding-bottom: 30%;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 1px 1px 20px #0ef,
-        1px 1px 40px #0ef;
-    margin-right: 50px;
+    flex: 0 0 30%; /* Adjust as needed */
+    padding: 0 20px;
+    margin-left: 93px;
 }
 
 .about-img img {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 1px 1px 20px #0ef, 1px 1px 40px rgb(255, 0, 212);
 }
 
-.about-text {
-    text-align: center;
-    max-width: 100%;
-    font-size: 20px;
-    padding: 1;
+.home-content {
+    flex: 0 0 60%; /* Adjust as needed */
+    padding: 0 20px;
+    text-align: left;
 }
 
-.about-text a {
-    margin-top: 25px;
+.btn-box {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0ef;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 40px;
 }
 
-.about-text h2 {
+
+
+.home-content h2 {
     font-size: 60px;
 }
 
-.about-text h2 span {
+.home-content h2 span {
     color: #0ef;
-
+    font-size: 60px;
 }
 
-.about-text h4 {
+.home-content h4 {
     font-size: 28px;
     font-weight: 600;
     color: #fff;
@@ -990,8 +978,10 @@ section {
     }
 }
 
-@media screen and (max-width: 6in) {
-  
+@media screen and (max-width: 6.9in) {
+    *{
+        /* overflow-x: hidden; */
+    }
     .header {
         padding: 20px 5%; /* Adjust padding for smaller screens */
     }
@@ -1052,25 +1042,16 @@ section {
     .home-content p {
         text-align: center; /* Center the text */
     }
-    .hone-content h2 {
-        font-size: 60px;
-    }
 
-    .home-content h2 span{
-        color: #0ef;
-        font-size: 60px;
-    }
     .about {
         flex-direction: column;
         align-items: center;
     }
 
     .about-img {
-        width: 50%;
-        padding-bottom: 50%;
-        margin-top: -95px;
+        align-items: center;
         margin-bottom: 70px;
-        /* box-shadow: none; */
+        margin-left: -1px;
     }
 
     .about-text {
@@ -1189,4 +1170,11 @@ section {
     .last-text p {
     font-size: 14px;
     }
+}
+
+@media screen and (max-width: 750) {
+    .home-img{
+        display: none;
+        }
+
 }
