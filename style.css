@@ -1011,18 +1011,24 @@ section {
         padding: 0 10px; /* Adjusted content padding */
     }
 
-    .about-img {
-        width: 80%; /* Adjusted width */
-        padding-bottom: 80%; /* Adjusted padding ratio */
-        margin-top: -40px; /* Adjusted margin */
-        margin-bottom: 40px; /* Adjusted margin */
+/*     .about-img {
+        width: 80%;
+        padding-bottom: 80%;
+        margin-top: -40px;
+        margin-bottom: 40px;
+    } */
+
+    .about {
+        display: flex;
+        flex-direction: column; /* Change to a column layout on mobile */
     }
 
-     .about-text {
-        flex: 1; /* Full width in a single column layout */
-        order: 1; /* Move it to the top */
-        width: 100%; /* Full width for small screens */
-        margin: 10px 0; /* Adjusted vertical margin */
+    .about-img {
+        order: 1; /* Move the image to the top on mobile */
+    }
+
+    .about-text {
+        order: 2; /* Move the text below the image on mobile */
     }
     
     .serveice-list div {
