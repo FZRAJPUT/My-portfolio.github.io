@@ -4,7 +4,6 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'popins', sans-serif;
-    overflow-x: hidden;
 }
 
 body {
@@ -992,7 +991,9 @@ section {
 }
 
 @media screen and (max-width: 6.9in) {
-
+    *{
+        overflow-x: hidden;
+    }
     .header {
         padding: 20px 5%; /* Adjust padding for smaller screens */
     }
