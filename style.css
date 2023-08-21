@@ -865,19 +865,26 @@ section {
     border-radius: 0.5rem;
 }
 
-.gif{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #0ef;
+.gif {
     text-align: center;
-}
+    margin-top: 7%;
+    margin-left: 25%;
+    margin-right:  25%;
+    max-width: 90%;
+    padding: 20px;
+    background-color: #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 8px rgba(0, 200, 255, 0.1);
+  }
 
-.gif h1{
-    font-size:60px;
-    animation: slideTop 0.5s ease forwards;
-}
+.gif img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.gif h1, h3 {
+    margin: 10px 0;
+  }
 
 
 @keyframes slideRight {
@@ -982,6 +989,20 @@ section {
     *{
         /* overflow-x: hidden; */
     }
+    .gif{
+       
+        margin-top: 25%;
+        margin-left: 25%;
+        margin-right:  25%;
+    }
+    .gif h1 {
+        font-size: 20px;
+      }
+  
+    .gif h3 {
+        font-size: 16px;
+      }
+    
     .header {
         padding: 20px 5%; /* Adjust padding for smaller screens */
     }
