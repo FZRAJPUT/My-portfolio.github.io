@@ -1025,6 +1025,8 @@ section {
     }
 
     .navbar.active {
+        text-align: center;
+        
         left: 0; /* Show the navigation on hamburger button click */
     }
 
