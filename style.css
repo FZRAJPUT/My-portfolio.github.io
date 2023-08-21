@@ -1030,12 +1030,12 @@ section {
     }
 
     .navbar a {
-        text-align: center;
-        display:flex;
-        margin: 32px 166px;
+/*         text-align: center;
+        display:flex; */
+        margin: 32px 134px;
         border-radius: 40px;
         opacity: 1; /* Show the navigation items */
-        align-items: center;
+/*         align-items: center; */
     }
 
     .burger-menu {
