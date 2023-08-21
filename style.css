@@ -1032,10 +1032,11 @@ section {
     .navbar a {
         color: red;
         text-align: center;
-        display: block;
+        display:flex;
         margin: 32px 166px;
         border-radius: 40px;
         opacity: 1; /* Show the navigation items */
+        align-items: center;
     }
 
     .burger-menu {
