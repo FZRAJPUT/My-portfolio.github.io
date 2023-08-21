@@ -1030,6 +1030,7 @@ section {
     }
 
     .navbar a {
+        color: red;
         text-align: center;
         display: block;
         margin: 32px 166px;
