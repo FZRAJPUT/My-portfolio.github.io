@@ -1025,12 +1025,12 @@ section {
     }
 
     .navbar.active {
-        text-align: center;
         
         left: 0; /* Show the navigation on hamburger button click */
     }
 
     .navbar a {
+        text-align: center;
         display: block;
         margin: 32px 166px;
         border-radius: 40px;
